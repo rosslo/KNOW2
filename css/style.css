@@ -33,10 +33,10 @@ nav{
 	text-align: left;
 }
 nav i{
-	padding: 30px 0 0 20px;
+	padding: 0.5vh 0 0 20px;
 }
 #facebook i{
-	padding: 30px 20px 0 0;
+	padding: 0.5vh 20px 0 0;
 }
 #facebook{
 	text-align: right;
@@ -77,10 +77,9 @@ article #know{
 }
 section{
 	height: 40vh; /*computer*/
+	text-align: left;
 }
 section h3, section h6, section p{
-	position: relative;
-	top: 31%;
 	padding: 10px 0;
 }
 section p{
@@ -102,7 +101,7 @@ section p{
 	background-image: url(images/cookie.JPG);
 }
 #expert{
-	background-image: url(images/expert.JPG);
+	background-image: url(images/background/expert.JPG);
 }
 #present{
 	background-image: url(images/present.JPG);
@@ -132,14 +131,34 @@ section p{
 
 }
 @media screen and (min-width: 961px){
+	h3{
+		font-size: 4em;
+	}
+	h6{
+		font-size: 2em;
+	}
 	header{
 		height: 15vh;
+	}
+	nav i{
+		padding: 30px 0 0 20px;
+	}	
+	#facebook i{
+		padding: 30px 20px 0 0;
 	}
 	article #know{
 		height: 85vh;
 	}
 	section{
 		height: 100vh; /*computer*/
+		text-align: center;
+	}
+	section h3, section h6, section p{
+		position: relative;
+		top: 31%;
+	}
+	.btn a{
+		font-size: 2em; 
 	}
 	.col-3{
 		width: 33.33%;
