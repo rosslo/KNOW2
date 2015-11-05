@@ -22,7 +22,7 @@ a:hover{
 /*header*/
 header{
 	width: 100%;
-	height: 15px; /*computer*/
+	height: 50px; /*computer*/
 	border-bottom: 1px solid #aaa;
 }
 nav, #facebook, #logo{
@@ -68,7 +68,7 @@ nav i{
 /*section*/
 article #know{
 	width: 100%;
-	height: 85px; /*computer*/
+	height: 50vh; /*computer*/
 	background-image: url(images/IMG_9454.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -76,7 +76,7 @@ article #know{
 	border-bottom: 1px solid #aaa;
 }
 section{
-	height: 100px; /*computer*/
+	height: 40vh; /*computer*/
 }
 section h3, section h6, section p{
 	position: relative;
@@ -89,7 +89,7 @@ section p{
 /**/
 .col-3{
 	width: 100%;
-	height: 100px;/*computer*/
+	height: 50vh;/*computer*/
 	float: left;
 	text-align: center;
 	color: #fff;
