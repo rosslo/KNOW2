@@ -7,10 +7,10 @@ body{
 	clear: both;
 }
 h3{
-	font-size: 3em;
+	font-size: 2em;/*computer-3*/
 }
 h6{
-	font-size: 1.5em;
+	font-size: 1em;/*computer-1.5*/
 }
 a{
 	text-decoration: none;
@@ -118,7 +118,7 @@ section p{
 /*btn*/
 .btn a{
 	padding: 10px 20px;
-	font-size: 1.5em;
+	font-size: 1em; /*computer-1.5*/
 	font-weight: bold;
 	color: #888;
 	background-color: rgb(44,242,156);
