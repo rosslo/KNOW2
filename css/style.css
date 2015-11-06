@@ -17,10 +17,19 @@ body{
 .clearfix {
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
-.container{
+.container ,.txtVer{
 	width: 80%;
 	margin: 0 auto;
-	padding: 1em 0;
+	padding: 1.5em 0;
+}
+/*垂直置中*/
+.txtVer{				
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 /**/
 h3{
@@ -91,21 +100,11 @@ article #list{
 }
 /*section*/
 section{
-	 /*computer*/
 	text-align: center;
 	background-color: #222;
 	border-bottom: 1px solid #aaa;
 }
- section h6{
-	padding: 30px 0;
-}
-section p{
-	padding-top: 45px;
-}
-#know, #element, #goal ,#signup{
-	height: 75vh;
-	position: relative;
-}
+
 #element{
 	background-color: #fff;
 	color: #000;
@@ -114,7 +113,6 @@ section p{
 #element p{
 	position: relative;
 	top: -1em;
-	line-height: 1.5em;
 }
 #signup figure{
 	height: 40vh;
@@ -131,13 +129,11 @@ article #know{
 	background-size: cover;
 	z-index: 1;
 }
-article #know h3{
+#know h3{
 	text-align: left;
+	padding: 1em 0;
 }
 /*process*/
-#process .col-3{
-	position: relative;
-}
 #process .col-3 figure{
 	width: 100%;
 	height: 100%;
@@ -147,19 +143,17 @@ article #know h3{
 	z-index: -1;
 }
 #process .col-3 p, #process .col-3 h3{
-	position: absolute;
-	margin: auto;
-  /*computer top:30vh*/
-	left:0;
-	right:0;
+	
 	z-index: 4;
 }
-#process .col-3 p{
-	margin: 10vh;
-	line-height: 1.3em;
+p{
+	line-height: 1.5em;
+	padding: 1em;
 }
 .col-2{
+	padding: 1em 0; 
 	width: 100%;
+	float: left;
 }
 .col-2 iframe{
 	width: 40vw;
@@ -167,6 +161,7 @@ article #know h3{
 }
 /**/
 #process .col-3{
+	position: relative;
 	width: 100%;
 	height: 100vh;/*computer*/
 	float: left;
@@ -178,6 +173,12 @@ article #know h3{
 }
 #cookie{
 	background-image: url(images/cookie.jpg);
+}
+#cookie h3{
+	margin-top: 30vh;
+}
+#present h3{
+	padding-top: 30vh;
 }
 #expert{
 	background-image: url(images/expert.jpg);
@@ -195,7 +196,7 @@ header .fa:hover{
 }
 .fa{
 	color: #fff;
-	font-size: 1em;
+	font-size: 1.2em;
 }
 /*btn*/
 .btn{
@@ -241,18 +242,13 @@ header .fa:hover{
 	}
 	#know #slogan{
 		position: relative;
-		top: 31%;
+		top: 20%;
 	}
 	#process .col-3{
 		width: 33.33%;
-		height: 100vh;
-	}
-	#process .col-3 p, #process .col-3 h3{
-		top:30vh;  /*computer 30vh*/
 	}
 	.col-2{
 		width: 50%;
-		float: left;
 	}
 	.fa{
 		font-size: 2.5em;
