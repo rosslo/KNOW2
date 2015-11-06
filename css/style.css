@@ -41,8 +41,9 @@ nav i{
 #facebook{
 	text-align: right;
 }
-#list{
+article #list{
 	display: none;
+	z-index: 5;
 }
 #list, #list ul{
 	width: 100%;
@@ -66,15 +67,6 @@ nav i{
 	max-height: 100%;
 }
 /*section*/
-article #know{
-	width: 100%;
-	height: 50vh; /*computer*/
-	background-image: url(images/IMG_9454.JPG);
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	border-bottom: 1px solid #aaa;
-}
 section{
 	height: 40vh; /*computer*/
 }
@@ -83,6 +75,28 @@ section h3, section h6, section p{
 }
 section p{
 	padding-top: 45px;
+}
+#signup{
+	background-color: #333;
+	background-image: url(images/4.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#element{
+	background-color: #222;
+}
+article #element h3, article #element ul, article #signup h3{
+	top: 0;
+}
+article #know{
+	width: 100%;
+	height: 50vh; /*computer*/
+	background-image: url(images/IMG_9454.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	z-index: 1;
 }
 /*process*/
 #process .col-3{
@@ -110,7 +124,6 @@ section p{
 	line-height: 1.3em;
 }
 
-
 /**/
 #process .col-3{
 	width: 100%;
@@ -123,23 +136,21 @@ section p{
 	background-position: center;
 	background-size: cover;
 }
-section #cookie{
-	
-}
-section #expert{
 
-}
 #present{
-	
+	background-image: url(images/present.JPG);
 }
 /*icon*/
-.fa{
+header .fa{
 	color: #888;
-	cursor: pointer;
-	font-size: 1em;
+	cursor: pointer;	
 }
-.fa:hover{
+header .fa:hover{
 	color: #000;
+}
+.fa{
+	color: #fff;
+	font-size: 1em;
 }
 /*btn*/
 .btn a{
@@ -181,7 +192,7 @@ section #expert{
 		height: 100vh; /*computer*/
 		text-align: center;
 	}
-	section h3, section h6, section p{
+	section h3, section h6, section p, section ul{
 		position: relative;
 		top: 31%;
 	}
