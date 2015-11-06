@@ -17,20 +17,12 @@ body{
 .clearfix {
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
-.container ,.txtVer{
+.container{
 	width: 80%;
 	margin: 0 auto;
 	padding: 1.5em 0;
 }
-/*垂直置中*/
-.txtVer{				
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
+
 /**/
 h3{
 	font-size: 1.8em;/*computer-3*/
@@ -105,7 +97,7 @@ section{
 	border-bottom: 1px solid #aaa;
 }
 
-#element{
+#element ,#benifit{
 	background-color: #fff;
 	color: #000;
 }
@@ -113,6 +105,12 @@ section{
 #element p{
 	position: relative;
 	top: -1em;
+}
+#signup h3{
+	padding-bottom: 1em;
+}
+#signup .btn{
+	margin: 0 0.5em;
 }
 #signup figure{
 	height: 40vh;
@@ -142,10 +140,7 @@ article #know{
 	max-height: 100%;
 	z-index: -1;
 }
-#process .col-3 p, #process .col-3 h3{
-	
-	z-index: 4;
-}
+
 p{
 	line-height: 1.5em;
 	padding: 1em;
@@ -156,7 +151,7 @@ p{
 	float: left;
 }
 .col-2 iframe{
-	width: 40vw;
+	width: 100%;
 	height: 50vh;
 }
 /**/
@@ -174,12 +169,10 @@ p{
 #cookie{
 	background-image: url(images/cookie.jpg);
 }
-#cookie h3{
+.col-3 h3{
 	margin-top: 30vh;
 }
-#present h3{
-	padding-top: 30vh;
-}
+
 #expert{
 	background-image: url(images/expert.jpg);
 }
@@ -212,6 +205,13 @@ header .fa:hover{
 .textLeft{
 	text-align: left;
 }
+footer{
+	background-color: #222;
+}
+footer p{
+	font-size: 1em;
+}
+
 
 /*media*/
 @media screen and (min-width: 769px){
@@ -224,7 +224,7 @@ header .fa:hover{
 	h6{
 		font-size: 2em;
 	}
-	p, .btn{
+	p, .container .btn{
 		font-size: 1.25em;
 	}
 	header{
@@ -239,6 +239,9 @@ header .fa:hover{
 	}
 	article #know h3{
 		text-align: center;
+	}
+	#know h6{
+		padding-bottom: 1em;
 	}
 	#know #slogan{
 		position: relative;
