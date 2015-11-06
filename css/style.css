@@ -60,7 +60,6 @@ article #list{
 #logo figure{
 	text-align: center;
 	height: 100px;
-	overflow: hidden;
 }
 #logo figure img{
 	max-width: 100%;
@@ -68,7 +67,8 @@ article #list{
 }
 /*section*/
 section{
-	height: 40vh; /*computer*/
+	height: 100vh; /*computer*/
+	text-align: center;
 }
 section h3, section h6, section p{
 	padding: 10px 0;
@@ -79,6 +79,7 @@ section p{
 #signup{
 	background-color: #333;
 	background-image: url(images/4.png);
+	background-size: 50vh; /*moblie 30*/
 	background-repeat: no-repeat;
 	background-position: right;
 }
@@ -94,9 +95,11 @@ article #know{
 	background-image: url(images/IMG_9454.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: center;
 	border-bottom: 1px solid #aaa;
 	z-index: 1;
+}
+article #know h3{
+	text-align: left;
 }
 /*process*/
 #process .col-3{
@@ -113,7 +116,7 @@ article #know{
 #process .col-3 p, #process .col-3 h3{
 	position: absolute;
 	margin: auto;
-	top:30vh;
+	top:10vh;  /*computer 30vh*/
 	left:0;
 	right:0;
 	z-index: 4;
@@ -129,7 +132,6 @@ article #know{
 	width: 100%;
 	height: 50vh;/*computer*/
 	float: left;
-	text-align: center;
 	color: #fff;
 }
 #cookie, #expert, #present{
@@ -186,10 +188,8 @@ header .fa:hover{
 	}
 	article #know{
 		height: 85vh;
-		text-align: center;
 	}
-	section{
-		height: 100vh; /*computer*/
+	article #know h3{
 		text-align: center;
 	}
 	section h3, section h6, section p, section ul{
@@ -202,6 +202,9 @@ header .fa:hover{
 	#process .col-3{
 		width: 33.33%;
 		height: 100vh;
+	}
+	#process .col-3 p, #process .col-3 h3{
+		top:30vh;  /*computer 30vh*/
 	}
 	.fa{
 		font-size: 2.5em;
