@@ -1,5 +1,5 @@
 body{
-	font-family: Microsoft JhengHei;
+	font-family: "Microsoft JhengHei";
 	width: 100%;
 	color: #fff;
 }
@@ -136,7 +136,14 @@ article #know h3{
 	margin: 10vh;
 	line-height: 1.3em;
 }
-
+.col-2{
+	width: 100%;
+}
+.col-2 iframe{
+	width: 50vw;
+	height: 50vh;
+	margin: auto;
+}
 /**/
 #process .col-3{
 	width: 100%;
@@ -190,13 +197,13 @@ header .fa:hover{
 }
 @media screen and (min-width: 961px){
 	h3{
-		font-size: 4em;
+		font-size: 3em;
 	}
 	h6{
 		font-size: 2em;
 	}
 	p, .btn{
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 	header{
 		height: 15vh;
@@ -223,6 +230,10 @@ header .fa:hover{
 	}
 	#process .col-3 p, #process .col-3 h3{
 		top:30vh;  /*computer 30vh*/
+	}
+	.col-2{
+		width: 50%;
+		float: left;
 	}
 	.fa{
 		font-size: 2.5em;
