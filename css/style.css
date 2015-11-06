@@ -80,7 +80,7 @@ article #list{
 }
 /*section*/
 section{
-	height: 100vh; /*computer*/
+	 /*computer*/
 	text-align: center;
 }
 section h3, section h6, section p{
@@ -172,14 +172,13 @@ header .fa:hover{
 	font-size: 1em;
 }
 /*btn*/
-.btn a{
+.btn{
+	font-size: 1em;
 	padding: 10px 20px;
-	font-size: 1em; /*computer-1.5*/
-	font-weight: bold;
 	color: #888;
 	background-color: rgb(44,242,156);
 }
-.btn a:hover{
+.btn:hover{
 	color: #fff;
 	text-decoration: none;
 }
@@ -197,7 +196,7 @@ header .fa:hover{
 		font-size: 4em;
 	}
 	h6, p{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	header{
 		height: 15vh;
@@ -214,12 +213,9 @@ header .fa:hover{
 	article #know h3{
 		text-align: center;
 	}
-	#know h3, #know h6, #know p{
+	#know #slogan{
 		position: relative;
 		top: 31%;
-	}
-	.btn a{
-		font-size: 2em; 
 	}
 	#process .col-3{
 		width: 33.33%;
