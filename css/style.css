@@ -7,7 +7,7 @@ body{
 	clear: both;
 }
 h3{
-	font-size: 2em;/*computer-3*/
+	font-size: 1.8em;/*computer-3*/
 }
 h6{
 	font-size: 1em;/*computer-1.5*/
@@ -72,13 +72,11 @@ article #know{
 	background-image: url(images/IMG_9454.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: left;
+	text-align: center;
 	border-bottom: 1px solid #aaa;
 }
 section{
 	height: 40vh; /*computer*/
-	 z-index:1; 	/*background fix*/
-	 overflow:auto;	/*background fix*/
 }
 section h3, section h6, section p{
 	padding: 10px 0;
@@ -86,8 +84,35 @@ section h3, section h6, section p{
 section p{
 	padding-top: 45px;
 }
+/*process*/
+#process .col-3{
+	position: relative;
+}
+#process .col-3 figure{
+	width: 100%;
+	height: 100%;
+}
+#process .col-3 figure img{
+	max-height: 100%;
+	z-index: -1;
+}
+#process .col-3 p, #process .col-3 h3{
+	position: absolute;
+	margin: auto;
+	top:30vh;
+	left:0;
+	right:0;
+	z-index: 4;
+}
+#process .col-3 p{
+	margin: 10vh;
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+
 /**/
-.col-3{
+#process .col-3{
 	width: 100%;
 	height: 50vh;/*computer*/
 	float: left;
@@ -98,20 +123,20 @@ section p{
 	background-position: center;
 	background-size: cover;
 }
-#cookie{
+section #cookie{
 	
 }
-#expert{
-	background-image: url(images/background/expert.JPG);
+section #expert{
+
 }
 #present{
-	background-image: url(images/present.JPG);
+	
 }
 /*icon*/
 .fa{
 	color: #888;
 	cursor: pointer;
-	font-size: 0.5em;
+	font-size: 1em;
 }
 .fa:hover{
 	color: #000;
@@ -163,7 +188,7 @@ section p{
 	.btn a{
 		font-size: 2em; 
 	}
-	.col-3{
+	#process .col-3{
 		width: 33.33%;
 		height: 100vh;
 	}
