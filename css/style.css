@@ -33,10 +33,10 @@ nav{
 	text-align: left;
 }
 nav i{
-	padding: 0.5vh 0 0 20px;
+	padding: 0.5em 0 0 20px;
 }
 #facebook i{
-	padding: 0.5vh 20px 0 0;
+	padding: 0.5em 20px 0 0;
 }
 #facebook{
 	text-align: right;
@@ -72,12 +72,13 @@ article #know{
 	background-image: url(images/IMG_9454.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: center;
+	text-align: left;
 	border-bottom: 1px solid #aaa;
 }
 section{
 	height: 40vh; /*computer*/
-	text-align: left;
+	 z-index:1; 	/*background fix*/
+	 overflow:auto;	/*background fix*/
 }
 section h3, section h6, section p{
 	padding: 10px 0;
@@ -98,7 +99,7 @@ section p{
 	background-size: cover;
 }
 #cookie{
-	background-image: url(images/cookie.JPG);
+	
 }
 #expert{
 	background-image: url(images/background/expert.JPG);
@@ -110,6 +111,7 @@ section p{
 .fa{
 	color: #888;
 	cursor: pointer;
+	font-size: 0.5em;
 }
 .fa:hover{
 	color: #000;
@@ -148,6 +150,7 @@ section p{
 	}
 	article #know{
 		height: 85vh;
+		text-align: center;
 	}
 	section{
 		height: 100vh; /*computer*/
@@ -163,5 +166,8 @@ section p{
 	.col-3{
 		width: 33.33%;
 		height: 100vh;
+	}
+	.fa{
+		font-size: 2.5em;
 	}
 }
