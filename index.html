@@ -15,6 +15,44 @@
 			.click(function(){
 				$('#list').toggle();
 			});
+			$("#btn1, #nav1").click(function(){
+				activeNav($(this));
+				slideTo($('#element'));			
+			});
+			$("#nav2").click(function(){
+				activeNav($(this));
+				slideTo($('#goal'));		
+			});
+			$("#nav3").click(function(){
+				activeNav($(this));
+				slideTo($('#process'));				
+			});
+			$("#nav4").click(function(){
+				activeNav($(this));
+				slideTo($('#signup'));				
+			});
+			$("#btnStu").click(function(){
+				activeNav($(this));
+				slideTo($('#student'));				
+			});
+			$("#btnVol").click(function(){
+				activeNav($(this));
+				slideTo($('#volunteer'));				
+			});
+			function slideTo(area){
+				var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+				var $top = area.offset().top - $('header').height();
+				$body.animate({
+					scrollTop: $top
+				}, 1000);
+				return false;
+			}
+			function activeNav(nav){
+				$("#nav ul li a").each(function(){
+					$(this).removeClass("active");
+				});
+				nav.addClass("active");
+			}
 	 	});
 	</script>
 </head>
@@ -24,13 +62,14 @@
 			<i class="fa fa-bars"></i>
 		</nav>
 		<div id="logo">
-			<figure><a href="http://rosslo.github.io/KNOW/"><img src="images/logoFlat.png"></a></figure>
+			<figure><a href="http://rosslo.github.io/KNOW2/"><img src="images/logoFlat.png"></a></figure>
 		</div>
 		<div id="nav">
 			<ul>
-				<li><a class="active" href="#">活動首頁</a></li>
-				<li><a href="#">活動內容</a></li>
-				<li><a href="#">立即報名</a></li>
+				<li><a id="nav1" class="active" href="#">活動概念</a></li>
+				<li><a id="nav2" href="#">活動目的</a></li>
+				<li><a id="nav3" href="#">活動內容</a></li>
+				<li><a id="nav4" href="#">立即報名</a></li>
 				<li><a href="#">歷屆回顧</a></li>
 				<li><a href="#">回到接棒</a></li>
 			</ul>
@@ -44,7 +83,8 @@
 	<article>
 		<div id="list">
 			<ul>
-				<li><a href="#">活動首頁</a></li>
+				<li><a href="#">活動概念</a></li>
+				<li><a href="#">活動目的</a></li>
 				<li><a href="#">活動內容</a></li>
 				<li><a href="#">立即報名</a></li>
 				<li><a href="#">歷屆回顧</a></li>
@@ -119,6 +159,36 @@
 			<a class="btn" href="#" id="btnVol">我是志工</a>
 			</div>
 			<figure><img src="images/4.png"></figure>
+		</section>
+		<section id="student">
+			<div class="container">
+				<h3>我是學生</h3>
+				<p>你厭倦了充滿讀書考試的生活？<br />
+				你有沒有幾件很感興趣的事，卻不確定是否能發展並作為一生的志業？<br />
+				你渴望尋求突破並且也做好了接受挑戰的準備？<br />
+				如果你的答案是”YES”<br />
+				你就是我們要找的人！歡迎參加生涯探索「KNOW」活動！</p>
+				<p><a class="btn" href="#" id="btn5">我想報名GO！</a></p>
+			</div>		
+		</section>
+		<section id="volunteer">
+			<div class="container">
+				<h3>我是志工</h3>
+				<p>你曾覺得台灣的教育體制有問題？<br />
+				你曾因別人的一句話而得到啟發？<br />
+				你希望能改變社會單一的價值觀？<br />
+				歡迎加入我們的行動計劃「生涯探索KNOW活動」！<br /></p>
+				<p>每場生涯探索「KNOW」活動都為30~40位學生舉辦，為求活動品質，我們需要志工們的參與，因此需要您的協助。<br />
+				請大家踴躍報名，或者是幫忙推薦身邊適合的朋友們來參加，我們誠摯邀請您一同來為台灣的學生們盡一份心力！</p>
+				<p class="textLeft">▲參與志工需求<br />
+				各領域專業人士(專家)： 特定領域任職五年以上的經驗。且願意與學生們分享自己的心得。<br />
+				學生引導員(協助)：需樂意與學生互動，協助同學們主動參與，與主持人配合，讓活動順暢。<br />
+				照片攝影：需有攝影經驗，自備相機，活動後需將照片提供給我們。<br />
+				影片攝影：需有攝影經驗，自備相機(可外接麥克風尤佳)，活動後需將影片提供給我們。<br />
+				文字紀錄編輯：活動中觀察記錄，具有幽默感，善記人名與事件，會編輯ppt，須參與活動。
+				</p>
+				<p><a class="btn" href="#" id="btn5">我想參與GO！</a></p>
+			</div>	
 		</section>
 	</article>
 	<footer>
