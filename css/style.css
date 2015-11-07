@@ -46,6 +46,10 @@ header{
 	top: 0;
 	z-index: 10;
 }
+#headerTop{
+	height: 50px;
+	background-color: #fff;
+}
 #nav{
 	display: none;
 }
@@ -124,7 +128,7 @@ section{
 }
 article #know{
 	width: 100%;
-	height: 50vh; /*computer*/
+	height: 60vh; /*computer*/
 	background-image: url(images/IMG_9454.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;

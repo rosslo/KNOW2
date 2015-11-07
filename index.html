@@ -52,12 +52,16 @@
 					$(this).removeClass("active");
 				});
 				nav.addClass("active");
+				if (screen.width < 769){
+					$('.fa-bars').click();
+				}
 			}
 	 	});
 	</script>
 </head>
 <body>
 	<header>
+		<div id="headerTop">
 		<nav>
 			<i class="fa fa-bars"></i>
 		</nav>
@@ -77,6 +81,7 @@
 		<div id="facebook">
 			<a href="https://www.facebook.com/BatonEnlightenmentProject/?fref=ts"><i class="fa fa-facebook"></i></a>
 			<div class="clearfix"></div>
+		</div>
 		</div>
 		<div id="list">
 			<ul>
