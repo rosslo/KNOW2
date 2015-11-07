@@ -135,7 +135,7 @@ article #know{
 	z-index: 1;
 }
 #know h3{
-	padding: 2em 0;
+	padding-top: 2em 0 1em 0; 
 }
 /*process*/
 #process .col-3 figure{
