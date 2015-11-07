@@ -41,8 +41,6 @@ a:hover{
 header{
 	width: 100%;
 	height: 50px; /*computer*/
-	position: fixed;
-	top: 0;
 	background-color: #fff;
 	border-bottom: 1px solid #aaa;
 	z-index: 10;
@@ -241,6 +239,8 @@ footer p{
 	}
 	header{
 		height: 10vh;
+		position: fixed;
+		top: 0;
 	}
 	header #logo{
 		height: 100%;

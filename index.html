@@ -15,19 +15,19 @@
 			.click(function(){
 				$('#list').toggle();
 			});
-			$("#btn1, #nav1").click(function(){
+			$("#btn1, #nav1, #list1").click(function(){
 				activeNav($(this));
 				slideTo($('#element'));			
 			});
-			$("#nav2").click(function(){
+			$("#nav2, #list2").click(function(){
 				activeNav($(this));
 				slideTo($('#goal'));		
 			});
-			$("#nav3").click(function(){
+			$("#nav3, #list3").click(function(){
 				activeNav($(this));
 				slideTo($('#process'));				
 			});
-			$("#nav4").click(function(){
+			$("#nav4, #list4").click(function(){
 				activeNav($(this));
 				slideTo($('#signup'));				
 			});
@@ -83,10 +83,10 @@
 	<article>
 		<div id="list">
 			<ul>
-				<li><a href="#">活動概念</a></li>
-				<li><a href="#">活動目的</a></li>
-				<li><a href="#">活動內容</a></li>
-				<li><a href="#">立即報名</a></li>
+				<li><a id="list1" href="#">活動概念</a></li>
+				<li><a id="list2" href="#">活動目的</a></li>
+				<li><a id="list3" href="#">活動內容</a></li>
+				<li><a id="list4" href="#">立即報名</a></li>
 				<li><a href="#">歷屆回顧</a></li>
 				<li><a href="#">回到接棒</a></li>
 			</ul>
