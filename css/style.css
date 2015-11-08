@@ -235,14 +235,17 @@ footer p{
 	#know #slogan{
 		margin-top: 20vh;
 	}
-}
-@media screen and (min-width: 961px){
 	h3{
 		font-size: 3em;
 	}
 	h6{
 		font-size: 2em;
 	}
+	#process .container p{
+		font-size: 1.25em;
+	}
+}
+@media screen and (min-width: 961px){
 	p, .container .btn{
 		font-size: 1.25em;
 	}
