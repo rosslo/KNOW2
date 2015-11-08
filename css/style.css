@@ -232,6 +232,9 @@ footer p{
 	#process .col-3{
 		height: 80vh;
 	}
+	#know #slogan{
+		margin-top: 20vh;
+	}
 }
 @media screen and (min-width: 961px){
 	h3{
@@ -265,13 +268,13 @@ footer p{
 	#know h6{
 		padding-bottom: 1em;
 	}
-	#know #slogan{
-		position: relative;
-		top: 20%;
-	}
+
 	#process .col-3{
 		width: 33.33%;
 	}
+	.col-3 h3{
+		margin-top: 20vh;
+	}	
 	.col-2{
 		width: 50%;
 	}
