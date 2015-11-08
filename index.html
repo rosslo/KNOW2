@@ -41,7 +41,7 @@
 			});
 			function slideTo(area){
 				var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-				var $top = area.offset().top - $('header').height();
+				var $top = area.offset().top - $('#headerTop').height();
 				$body.animate({
 					scrollTop: $top
 				}, 1000);
@@ -52,7 +52,7 @@
 					$(this).removeClass("active");
 				});
 				nav.addClass("active");
-				if (screen.width < 769){
+				if (screen.width < 768){
 					$('.fa-bars').click();
 				}
 			}

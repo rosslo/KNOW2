@@ -228,8 +228,10 @@ footer p{
 
 
 /*media*/
-@media screen and (min-width: 769px){
-
+@media screen and (min-width: 768px){
+	#process .col-3{
+		height: 80vh;
+	}
 }
 @media screen and (min-width: 961px){
 	h3{
