@@ -233,7 +233,7 @@ footer p{
 		height: 80vh;
 	}
 	#know #slogan{
-		margin-top: 20vh;
+		margin-top: 10vh;
 	}
 	h3{
 		font-size: 3em;
@@ -259,8 +259,11 @@ footer p{
 		text-align: left;
 		height: 100%;
 	}
-	#facebook i{
-		
+	#logo figure img{
+		max-height: 125%;
+	}
+	#know #slogan{
+		margin-top: 20vh;
 	}
 	article #know{
 		height: 100vh;
