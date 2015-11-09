@@ -40,14 +40,13 @@ a:hover{
 /*header*/
 header{
 	width: 100%; /*computer*/
-	background-color: #fff;
 	border-bottom: 1px solid #aaa;
 	position: fixed;
 	top: 0;
 	z-index: 10;
 }
 #headerTop{
-	height: 5px;
+	height: 45px;
 	background-color: #fff;
 }
 #nav{
@@ -64,7 +63,7 @@ nav i{
 	padding: 0.5em 0 0 20px;
 }
 #facebook i{
-	padding: 0.4em 20px 0 0;
+	padding: 0.5em 20px 0 0;
 }
 #facebook{
 	text-align: right;
