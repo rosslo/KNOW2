@@ -249,10 +249,10 @@ footer p{
 	p, .container .btn{
 		font-size: 1.25em;
 	}
-	header{
+	#headerTop{
 		height: 10vh;
 	}
-	header #logo{
+	header #headerTop #logo{
 		height: 10vh;
 	}
 	#logo figure{
