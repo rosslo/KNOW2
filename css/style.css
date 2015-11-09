@@ -319,4 +319,10 @@ footer p{
 	.fa-bars{
 		display: none;
 	}
+	#goal p, #benifit p{
+		text-align: left;
+	}
+	#benifit p{
+		margin-left: 18vw;
+	}
 }
