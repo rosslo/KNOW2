@@ -47,7 +47,7 @@ header{
 	z-index: 10;
 }
 #headerTop{
-	height: 50px;
+	height: 5px;
 	background-color: #fff;
 }
 #nav{
@@ -64,7 +64,7 @@ nav i{
 	padding: 0.5em 0 0 20px;
 }
 #facebook i{
-	padding: 0.5em 20px 0 0;
+	padding: 0.4em 20px 0 0;
 }
 #facebook{
 	text-align: right;
@@ -253,14 +253,14 @@ footer p{
 		height: 10vh;
 	}
 	header #logo{
-		height: 100%;
+		height: 10vh;
 	}
 	#logo figure{
 		text-align: left;
 		height: 100%;
 	}
 	#logo figure img{
-		max-height: 125%;
+		max-height: 100%;
 	}
 	#know #slogan{
 		margin-top: 20vh;
